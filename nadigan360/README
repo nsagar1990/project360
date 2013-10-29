@@ -1,0 +1,18 @@
+Steps for starting the project running:
+
+prerequisites
++===========+
+1) python-django
+2) mysql
+
+
+Running the project:-
++==================+
+1) Download the nadigan360
+2) Go to nadigan360 directory and move the database file to /var/lib/mysql in your machine.
+	* After copying the nadigan360 database to /var/lib/mysql, 
+		-> We have run chown -R mysql:mysql nadigan360
+		-> Open mysql, goto nadigan360 database, run command flush tables.
+3) Navigate to directory containing manage.py . From there run "python manage.py syncdb".
+4) After that run python manage.py runserver 9001.
+After this we can open the site in the browser http://localhost:9001
